@@ -1,5 +1,10 @@
 @import url(./typography.css);
 
+:root {
+  --padding-between: 20px;
+  --padding-top: 48px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -34,6 +39,8 @@ body {
 }
 
 .info__heading {
+  padding-bottom: var(--padding-between);
+
   font-family: var(--secondary-font);
 
   line-height: 31px;
@@ -57,7 +64,7 @@ body {
   align-items: flex-start;
   gap: 10px;
 
-  padding-top: 30px;
+  padding-top: var(--padding-top);
 }
 
 .info__btn {
@@ -86,8 +93,12 @@ body {
     line-height: 39px;
   }
 
-  .info__buttons-group {
-    flex-direction: row;
+  .info__paragraph {
+    font-size: 20px;
+  }
+
+  .info__btn {
+    font-size: 18px;
   }
 }
 
@@ -98,12 +109,17 @@ body {
     max-height: 460px;
     padding: 87px 40px;
   }
+
+  .info__buttons-group {
+    flex-direction: row;
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .info {
     background: url("../images/info_bg.svg") no-repeat center;
-    background-size: 110%;
+    background-size: 120%;
   }
 
   .info__wrapper {
@@ -125,9 +141,28 @@ body {
   .info {
     padding-left: 45px;
     padding-right: 45px;
+
+    background-size: 100%;
   }
   .info__wrapper {
-    max-width: 1200px;
+    max-width: 1340px;
+    max-height: 530px;
     margin: 30px auto;
+  }
+
+  .info__heading {
+    font-size: 44px;
+
+    line-height: 48.4px;
+  }
+
+  .info__paragraph {
+    font-size: 22px;
+
+    line-height: 28.8px;
+  }
+
+  .info__mockup {
+    height: 630px;
   }
 }
