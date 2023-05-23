@@ -139,6 +139,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .info {
+    margin-bottom: 4%;
+
     padding-left: 45px;
     padding-right: 45px;
 
